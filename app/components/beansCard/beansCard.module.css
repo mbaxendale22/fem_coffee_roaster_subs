@@ -1,0 +1,12 @@
+.collection__container h4 {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.image__container {
+    height: 12rem;
+}
+
+.image__container img {
+    height: 100%;
+    object-fit: cover;
+}
