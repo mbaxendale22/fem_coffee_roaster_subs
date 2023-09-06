@@ -12,6 +12,7 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     background-clip: text;
+    font-size: clamp(3rem, 10vw, 150px);
 }
 
 .collection__container {
@@ -21,4 +22,63 @@
     justify-content: center;
     text-align: center;
     gap: 4rem;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+}
+
+.why_text__container {
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 4rem 2rem 36rem 2rem;
+}
+
+.why_text__container h3 {
+    padding-bottom: 1rem;
+}
+
+.chooseUsCard__container {
+    margin-top: -32rem;
+}
+
+.how_it_works__steps__container {
+    display: flex;
+}
+
+.how_it_works__container h4 {
+    color: var(--light-grey);
+    margin: 4rem 0 2rem 0;
+}
+
+.how_it_works__button {
+    margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+    .how_it_works__steps__container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .how_it_works__container h4 {
+        text-align: center;
+    }
+    .how_it_works__button {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .chooseUsCard__container {
+        display: flex;
+        margin-top: -8rem;
+    }
+
+    .why_text__container {
+        padding-bottom: 12rem;
+    }
+
+    .collection__container {
+        flex-direction: row;
+    }
 }

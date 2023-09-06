@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    max-width: 500px;
+    max-width: calc(100% - 2rem);
     margin: 0 auto;
 }
 
@@ -75,13 +75,8 @@
     }
 }
 
-@media (min-width: 768px) {
-    .nav__container {
-        max-width: 800px;
-    }
-}
 @media (min-width: 1200px) {
     .nav__container {
-        max-width: 1200px;
+        max-width: 1300px;
     }
 }

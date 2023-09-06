@@ -24,7 +24,8 @@
     padding: 0;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 72px;
     line-height: 72px;
     font-weight: 700;
@@ -86,6 +87,7 @@ button {
     color: white;
     border: none;
     font-size: 18px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -97,17 +99,17 @@ img {
 }
 
 .wrapper {
-    max-width: 500px;
+    max-width: calc(100% - 2rem);
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .wrapper {
+    /* .wrapper {
         max-width: 800px;
-    }
+    } */
 }
 @media (min-width: 1200px) {
     .wrapper {
-        max-width: 1200px;
+        max-width: 1300px;
     }
 }
