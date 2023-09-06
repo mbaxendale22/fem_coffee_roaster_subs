@@ -10,6 +10,7 @@ import Nav from './components/nav/nav'
 import { chooseUsData } from './data/chooseUsData'
 import ChooseUsCard from './components/chooseUsCard'
 import TimelineStep from './components/timeline'
+import Footer from './components/footer'
 
 const HERO_IMG_MOBILE = '/home/mobile/image-hero-coffeepress.jpg'
 const HERO_IMG_DESKTOP = '/home/desktop/image-hero-coffeepress.jpg'
@@ -115,6 +116,8 @@ export default function Home() {
                     </div>
                 </section>
             </main>
+
+            <Footer />
         </>
     )
 }
