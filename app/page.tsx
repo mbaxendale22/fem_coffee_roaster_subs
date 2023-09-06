@@ -11,6 +11,7 @@ import { chooseUsData } from './data/chooseUsData'
 import ChooseUsCard from './components/chooseUsCard'
 import TimelineStep from './components/timeline'
 import Footer from './components/footer'
+import Link from 'next/link'
 
 const HERO_IMG_MOBILE = '/home/mobile/image-hero-coffeepress.jpg'
 const HERO_IMG_DESKTOP = '/home/desktop/image-hero-coffeepress.jpg'
@@ -112,7 +113,11 @@ export default function Home() {
                         />
                     </div>
                     <div className={styles.how_it_works__button}>
-                        <button>Create your plan</button>
+                        <Link href={'/create-your-plan'}>
+                            <button className={fraunces.className}>
+                                Create your plan
+                            </button>
+                        </Link>
                     </div>
                 </section>
             </main>

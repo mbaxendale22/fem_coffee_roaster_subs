@@ -4,6 +4,7 @@
 
 .header {
     position: relative;
+    padding: 2rem 0;
 }
 
 .textWrapper {
@@ -17,6 +18,10 @@
     align-items: center;
     text-align: center;
     height: 75%;
+}
+
+.textWrapper p {
+    color: var(--light-creme);
 }
 
 @media (min-width: 768px) {

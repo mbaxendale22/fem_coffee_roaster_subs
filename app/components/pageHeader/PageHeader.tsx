@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './pageHeader.module.css'
 import { fraunces } from '@/app/fonts'
+import Link from 'next/link'
 
 interface Props {
     hero_img_mobile: string
@@ -26,9 +27,11 @@ export default function PageHeader(props: Props) {
                 <h2 className={`${fraunces.className}`}>{headline}</h2>
                 <p>{body}</p>
                 {hasButton ? (
-                    <button className={`${fraunces.className}`}>
-                        Create your plan
-                    </button>
+                    <Link href={'/create-your-plan'}>
+                        <button className={`${fraunces.className}`}>
+                            Create your plan
+                        </button>
+                    </Link>
                 ) : null}
             </div>
             <picture>
