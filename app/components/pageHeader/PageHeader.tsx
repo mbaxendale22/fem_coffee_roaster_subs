@@ -34,7 +34,7 @@ export default function PageHeader(props: Props) {
             <picture>
                 <source
                     srcSet={hero_img_mobile}
-                    media="(max-width: 400px)"
+                    media="(max-width: 500px)"
                 ></source>
                 <source
                     srcSet={hero_img_tablet}
