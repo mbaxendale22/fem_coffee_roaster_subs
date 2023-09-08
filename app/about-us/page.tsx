@@ -1,7 +1,10 @@
 import Nav from '../components/nav/nav'
 import PageHeader from '../components/pageHeader/PageHeader'
+import { headquartersData } from '../data/headquartersData'
 import { fraunces } from '../fonts'
 import styles from './aboutUsPage.module.css'
+import HeadquartersCard from '../components/headquartersCard'
+import Footer from '../components/footer'
 
 export default function AboutUsPage() {
     const bodyText = `Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of coffee from around the world. We have since been dedicated to bring the perfect cup - from bean to brew - in every shipment.`
@@ -71,7 +74,26 @@ export default function AboutUsPage() {
                         />
                     </picture>
                 </section>
+
+                <section className={styles.headquarters__section}>
+                    <h3 className={fraunces.className}>Our headquarters</h3>
+
+                    <div className={styles.headquarters__container}>
+                        {headquartersData.map((headquarters) => (
+                            <HeadquartersCard
+                                key={headquarters.country}
+                                image={headquarters.image}
+                                country={headquarters.country}
+                                street={headquarters.street}
+                                city={headquarters.city}
+                                postCode={headquarters.postCode}
+                                phone={headquarters.phone}
+                            />
+                        ))}
+                    </div>
+                </section>
             </main>
+            <Footer />
         </>
     )
 }

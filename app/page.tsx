@@ -9,9 +9,10 @@ import BeansCard from './components/beansCard'
 import Nav from './components/nav/nav'
 import { chooseUsData } from './data/chooseUsData'
 import ChooseUsCard from './components/chooseUsCard'
-import TimelineStep from './components/timeline'
+
 import Footer from './components/footer'
 import Link from 'next/link'
+import Timeline from './components/timeline'
 
 const HERO_IMG_MOBILE = '/home/mobile/image-hero-coffeepress.jpg'
 const HERO_IMG_DESKTOP = '/home/desktop/image-hero-coffeepress.jpg'
@@ -82,36 +83,7 @@ export default function Home() {
 
                 <section className={styles.how_it_works__container}>
                     <h4 className={fraunces.className}>How it works</h4>
-                    <div className={styles.how_it_works__steps__container}>
-                        <TimelineStep
-                            description="     Select from our evolving range of artisan
-                            coffees. Our beans are ethically sourced and
-                            we pay fair prices for them. There are new
-                            coffees in all profiles every month for you
-                            to try out."
-                            stage="01"
-                            title="Pick your coffee"
-                        />
-
-                        <TimelineStep
-                            description="     Customize your order frequency, quantity,
-                                    even your roast style and grind type. Pause,
-                                    skip or cancel your subscription with no
-                                    commitment through our online portal."
-                            stage="02"
-                            title="Choose the frequency"
-                        />
-
-                        <TimelineStep
-                            description="  We ship your package within 48 hours,
-                freshly roasted. Sit back and enjoy
-                award-winning world-class coffees curated to
-                provide a distinct tasting experience."
-                            stage="03"
-                            title="Receive and enjoy!"
-                            lastStage
-                        />
-                    </div>
+                    <Timeline />
                     <div className={styles.how_it_works__button}>
                         <Link href={'/create-your-plan'}>
                             <button className={fraunces.className}>
@@ -120,9 +92,8 @@ export default function Home() {
                         </Link>
                     </div>
                 </section>
+                <Footer />
             </main>
-
-            <Footer />
         </>
     )
 }
