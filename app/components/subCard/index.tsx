@@ -26,6 +26,8 @@ export default function SubCard(props: Props) {
         currentOptions.quantity === title ||
         currentOptions.type === title
 
+    const renderedTitle = title === 'Filtered' ? 'Filter' : title
+
     return (
         <div
             className={styles.container}
@@ -39,7 +41,7 @@ export default function SubCard(props: Props) {
                     : {}
             }
         >
-            <h3 className={fraunces.className}>{title}</h3>
+            <h3 className={fraunces.className}>{renderedTitle}</h3>
             <p style={currentlySelected ? { color: '#FEFCF7' } : {}}>
                 {description}
             </p>

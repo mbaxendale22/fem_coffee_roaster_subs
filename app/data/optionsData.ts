@@ -93,7 +93,7 @@ export const grindData = [
     },
     {
         id: 11,
-        title: 'Filter',
+        title: 'Filtered',
         description:
             'For drip or pour-over coffee methods such as V60 or Aeropress',
         optionCategory: 'grind',

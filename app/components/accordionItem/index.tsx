@@ -20,11 +20,23 @@ export default function AccordionItem(props: Props) {
         ? { height: 'initial', display: 'initial' }
         : { height: '0', display: 'none' }
 
+    const capsulesSelected = () => {
+        if (optionsState.mode === 'Capsule') {
+            return true
+        }
+        return false
+    }
+
+    const handleOpen = () => {
+        if (capsulesSelected() && title === 'Want us to grind them?') return
+        setOpen(!open)
+    }
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.arrow__container}>
                 <svg
-                    onClick={() => setOpen(!open)}
+                    onClick={handleOpen}
                     style={
                         open
                             ? { transform: 'Rotate(180deg)', cursor: 'pointer' }

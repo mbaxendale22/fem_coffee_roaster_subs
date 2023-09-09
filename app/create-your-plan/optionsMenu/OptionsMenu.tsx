@@ -107,7 +107,6 @@ export default function OptionsMenu() {
     useEffect(() => {
         if (
             optionsState.frequency &&
-            optionsState.grind &&
             optionsState.mode &&
             optionsState.quantity &&
             optionsState.type
