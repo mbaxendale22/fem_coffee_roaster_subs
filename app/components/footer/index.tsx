@@ -24,10 +24,10 @@ export default function Footer() {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/">About us</Link>
+                        <Link href="/about-us">About us</Link>
                     </li>
                     <li>
-                        <Link href="/">Create your plan</Link>
+                        <Link href="/create-your-plan">Create your plan</Link>
                     </li>
                 </ul>
 
