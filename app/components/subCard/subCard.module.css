@@ -11,8 +11,3 @@
 .container:hover {
     background-color: var(--pale-orange);
 }
-
-@media (min-width: 768px) {
-    .container {
-    }
-}

@@ -1,0 +1,91 @@
+.summary__container {
+    background-color: var(--dark-grey);
+    padding: 4rem;
+    border-radius: 0.5rem;
+}
+
+.summary__container h4 {
+    color: var(--light-grey);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.summary__text {
+    color: var(--light-creme);
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.highlight {
+    color: var(--dark-cyan);
+}
+
+.summary__modal_header {
+    background-color: var(--dark-grey);
+    color: var(--light-creme);
+    padding: 2rem;
+}
+
+.summary__modal__main_text {
+    background-color: var(--light-creme);
+    padding: 2rem;
+}
+.summary__modal__main_text p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.btn__container {
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.checkout_btn_tablet {
+    display: none;
+    margin-top: 2rem;
+}
+
+.checkout_btn_mobile {
+    margin-top: 2rem;
+}
+.summary__modal_wrapper {
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 99dvw;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .summary__modal {
+        max-width: 540px;
+    }
+    .btn__container {
+        text-align: right;
+    }
+
+    .checkout_btn_mobile {
+        display: none;
+    }
+    .checkout_btn_tablet {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .checkout_btn_tablet p {
+        color: black;
+        font-size: 32px;
+        font-weight: 600;
+        flex: 1;
+    }
+    .checkout_btn_tablet button {
+        flex: 1;
+    }
+}

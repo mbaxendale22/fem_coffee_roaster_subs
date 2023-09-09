@@ -108,34 +108,11 @@ export const grindData = [
         sectionHeading: 'Want us to grind them?',
     },
 ]
-export const frequencyData = [
-    {
-        id: 13,
-        title: 'Every week',
-        description: '$7.20 per shipment. Includes free first-class shipping.',
-        optionCategory: 'frequency',
-        sectionHeading: 'How often should we deliver?',
-    },
-    {
-        id: 14,
-        title: 'Every 2 weeks',
-        description: '$9.60 per shipment. Includes free priority shipping.',
-        optionCategory: 'frequency',
-        sectionHeading: 'How often should we deliver?',
-    },
-    {
-        id: 15,
-        title: 'Every month',
-        description: '$12.00 per shipment. Includes free priority shipping.',
-        optionCategory: 'frequency',
-        sectionHeading: 'How often should we deliver?',
-    },
-]
 
 export const optionsData = [
     modeData,
     typeData,
     quantityData,
     grindData,
-    frequencyData,
+    // frequencyData,
 ]

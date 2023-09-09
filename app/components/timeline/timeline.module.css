@@ -8,6 +8,7 @@
 
 .how_it_works__steps__container {
     display: flex;
+    padding: 1rem;
 }
 
 .text__container {

@@ -6,6 +6,7 @@ interface Props {
     title: string
     description: string
     lastStage?: boolean
+
     inverted?: boolean
 }
 
