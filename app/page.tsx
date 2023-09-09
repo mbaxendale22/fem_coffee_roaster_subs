@@ -38,7 +38,7 @@ export default function Home() {
                 />
 
                 <h2 className={` ${fraunces.className} ${styles.collection}`}>
-                    Our collection
+                    our collection
                 </h2>
 
                 <section className={styles.collection__container}>
